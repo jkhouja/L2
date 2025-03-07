@@ -1,0 +1,131 @@
+{
+    "Aya_23_35B": {
+        "name": "CohereForAI/aya-23-35B",
+        "model_type": "transformers",
+        "dtype": "8bit",
+        "chat_header": "<BOS_TOKEN><|START_OF_TURN_TOKEN|><|USER_TOKEN|>",
+        "chat_footer":"<|END_OF_TURN_TOKEN|><|START_OF_TURN_TOKEN|><|CHATBOT_TOKEN|>"
+    },
+    "Phi4": {
+        "name": "microsoft/phi-4",
+        "model_type": "transformers",
+        "as_messages": true,
+        "dtype": "8bit",
+        "chat_header": "",
+        "chat_footer":""
+    },
+    "R1": {
+        "name": "deepseek/deepseek-r1",
+        "model_type": "open_router",
+        "chat_header": "", 
+        "chat_footer":""
+    },
+    "Llama_3.3_70B": {
+        "name": "meta-llama/Llama-3.3-70B-Instruct",
+        "model_type": "transformers",
+        "as_messages": true,
+        "dtype": "8bit",
+        "chat_header": "", 
+        "chat_footer":""
+    },
+    "Ours_1B":{
+        "name": "meta-llama/Llama-3.2-1B-Instruct",
+        "chkpoint": "jkhouja/Llama-3.2-1B-Instruct_ft",
+        "model_type": "transformers",
+        "as_messages": true,
+        "dtype": "",
+        "chat_header": "",
+        "chat_footer":""
+    },
+    "Ours_3B":{
+        "name": "meta-llama/Llama-3.2-3B-Instruct",
+        "chkpoint": "jkhouja/Llama-3.2-3B-Instruct_ft",
+        "model_type": "transformers",
+        "as_messages": true,
+        "dtype": "",
+        "chat_header": "",
+        "chat_footer":""
+    },
+    "Llama_3.2_3B_Inst": {
+        "name": "meta-llama/Llama-3.2-3B-Instruct",
+        "model_type": "transformers",
+        "as_messages": true,
+        "dtype": "",
+        "chat_header": "",
+        "chat_footer":""
+    },
+    "Llama_3.2_1B_Inst": {
+        "name": "meta-llama/Llama-3.2-1B-Instruct",
+        "model_type": "transformers",
+        "as_messages": true,
+        "dtype": "",
+        "chat_header": "",
+        "chat_footer":""
+    },
+    "GPT_4o": {
+        "name": "gpt-4o-2024-05-13",
+        "model_type": "openai",
+        "dtype": "",
+        "chat_header":"",
+        "chat_footer":""
+
+    },
+    "o3-mini": {
+        "name": "o3-mini",
+        "model_type": "openai",
+        "dtype": "",
+        "reasoning_effort": "high",
+        "skip_system": true,
+        "chat_header":"",
+        "chat_footer":""
+    },
+    "GPT_4.5": {
+        "name": "gpt-4.5-preview-2025-02-27",
+        "model_type": "openai",
+        "dtype": "",
+        "chat_header":"",
+        "chat_footer":""
+    },
+    "o1": {
+        "name": "o1-preview",
+        "model_type": "openai",
+        "dtype": "",
+        "skip_system": true,
+        "chat_header":"",
+        "chat_footer":""
+
+    },
+    "Command_R+": {
+        "name": "command-r-plus",
+        "model_type": "cohere",
+        "dtype": "",
+        "chat_header":"",
+        "chat_footer":""
+
+    },
+    "Sonnet": {
+        "name": "claude-3-5-sonnet-20241022",
+        "model_type": "anthropic",
+        "dtype": "",
+        "chat_header":"",
+        "chat_footer":""
+
+    },
+    "Sonnet_3.7": {
+        "name": "claude-3-7-sonnet-20250219",
+        "model_type": "anthropic",
+        "thinking": true,
+        "dtype": "",
+        "chat_header":"",
+        "chat_footer":""
+
+    },
+    "Gemini_1.5_Pro": {
+        "name": "gemini-1.5-pro",
+        "model_type": "google",
+        "dtype": "",
+        "chat_header":"",
+        "chat_footer":""
+
+    }
+}
