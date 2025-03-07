@@ -98,7 +98,7 @@ If you use this work, please cite:
 ```bibtex
 @misc{khouja2025lingolytoodisentanglingmemorisationreasoning,
       title={LINGOLY-TOO: Disentangling Memorisation from Reasoning with Linguistic Templatisation and Orthographic Obfuscation},
-      author={Jude Khouja and Karolina Korgul and Simi Hellsten and Lingyi Yang and Vlad Neacs and Harry Mayne and Ryan Kearns and Andrew Bean and Adam Mahdi},
+      author={Jude Khouja and Karolina Korgul and Simi Hellsten and Lingyi Yang and Vlad Neacsu and Harry Mayne and Ryan Kearns and Andrew Bean and Adam Mahdi},
       year={2025},
       eprint={2503.02972},
       archivePrefix={arXiv},
