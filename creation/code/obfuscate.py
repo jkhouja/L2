@@ -28,7 +28,7 @@ SHEET_PATH_EASY = DATA_PATH / "Obfuscation - EASY.csv"
 OBF_PATTERN = "@@@"
 LANG_PATTERN = "$$$"
 CULT_PATTERN = "&&&"
-NUM_OBF = 5
+NUM_OBF = 6
 SEED = 317
 UNICODE_STD = "NFD"  # "NFKD"
 

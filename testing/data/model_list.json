@@ -70,11 +70,28 @@
         "chat_footer":""
 
     },
+    "GPT_4o_aug": {
+        "name": "gpt-4o-2024-08-06",
+        "model_type": "openai",
+        "dtype": "",
+        "chat_header":"",
+        "chat_footer":""
+
+    },
     "o3-mini": {
         "name": "o3-mini",
         "model_type": "openai",
         "dtype": "",
         "reasoning_effort": "high",
+        "skip_system": true,
+        "chat_header":"",
+        "chat_footer":""
+    },
+    "o3-mini-low": {
+        "name": "o3-mini",
+        "model_type": "openai",
+        "dtype": "",
+        "reasoning_effort": "low",
         "skip_system": true,
         "chat_header":"",
         "chat_footer":""
@@ -88,7 +105,7 @@
     },
     "o1": {
         "name": "o1-preview",
-        "model_type": "openai",
+        "model_type": "o1",
         "dtype": "",
         "skip_system": true,
         "chat_header":"",
@@ -120,8 +137,24 @@
         "chat_footer":""
 
     },
+    "Sonnet_3.7_nothinking": {
+        "name": "claude-3-7-sonnet-20250219",
+        "model_type": "anthropic",
+        "dtype": "",
+        "chat_header":"",
+        "chat_footer":""
+
+    },
     "Gemini_1.5_Pro": {
         "name": "gemini-1.5-pro",
+        "model_type": "google",
+        "dtype": "",
+        "chat_header":"",
+        "chat_footer":""
+
+    },
+    "Gemini_2.5_pro": {
+        "name": "gemini-2.5-pro-exp-03-25",
         "model_type": "google",
         "dtype": "",
         "chat_header":"",

@@ -1,0 +1,33 @@
+{
+    "json_invalid": false,
+    "preamble": "Problem 1. Language X (5 marks)\nThe   inscriptions   are written in the ancient Language X, which is closely related to Language Y. The original translators used the similarity of many words to their Language Y relatives to help them to understand the meaning of many passages.",
+    "context": "Below are some Language X words  , their Language Y equivalents, and their English translations.\n\nLanguage X\tLanguage Y\tEnglish\nfofpi\tfufpe\tplace, set up\nvotov\ttve vo\tfor the business\nsvohpi\tsvucpin\trubbed down\nposo\tpudu\tfor you\n__(a)__\tfamcpan\tholy\npvos\tpvuf\tthree\nvisva\tvidvan\tred\nkapritov\ttve capirin\tfor the kid\nkilovpi\tcemlovpe\treturn\npivis\tpaivef\tbulls\n__(b)__\teluf\tsheep\nvohpo\tvocpo\trightly\nihpiv\taicpev\tofficial\n__(c)__ \ttve pvudi\tfor the tribe\npvas\tpvamf\tacross\n__(d)__\tsevin\ttown square\nkamopi\tcamupe\tsing\nifpopi\tefpompe\tshow\nofpi\tufpin\tthat one\n__(e)__\tumupe\tgo in\n\nHere is a sentence in Language X   with an English translation provided below.\nNote that the phrases in <brackets> are not present in the Language X, but are given to clarify the translation.\n\nLikiki Iuviu pvos lopris Marte Hur\u030cie soupi titritov pipaf Ikuvinaf pipatov Ikuvina.\n\u201cAt the temple of Jove, prepare three calves <as a sacrifice> to Mars Hodius for the community of the town of Iguvium, <and> for the town of Iguvium.\u201d\n\nLanguage X\tLanguage Y\tEnglish\n__(f)__\tivdf\ttown\n__(g)__\ttetirin\t__(h)__\n__(i)__\tlupiref\t__(j)__",
+    "questions": "[{\"question_n\": \"Q 1.1\", \"prompt\": \"For each letter (a)-(e), give the word that belongs in the corresponding gap.\", \"subprompts\": [{\"questionpart_n\": \"(a)\", \"question\": \"(a)\", \"answer\": \"fahpa\", \"matches_human_scoring\": false, \"fuzzy_matching\": false, \"manual_edit\": false}, {\"questionpart_n\": \"(b)\", \"question\": \"(b)\", \"answer\": \"ilos\", \"matches_human_scoring\": false, \"fuzzy_matching\": false, \"manual_edit\": false}, {\"questionpart_n\": \"(c)\", \"question\": \"(c)\", \"answer\": \"pvositov\", \"matches_human_scoring\": false, \"fuzzy_matching\": false, \"manual_edit\": false}, {\"questionpart_n\": \"(d)\", \"question\": \"(d)\", \"answer\": \"sivi\", \"matches_human_scoring\": false, \"fuzzy_matching\": false, \"manual_edit\": false}, {\"questionpart_n\": \"(e)\", \"question\": \"(e)\", \"answer\": \"omopi\", \"matches_human_scoring\": false, \"fuzzy_matching\": false, \"manual_edit\": false}]}, {\"question_n\": \"Q 1.2\", \"prompt\": \"For each letter (f)-(j), give the word that belongs in the corresponding gap in the table above.\", \"subprompts\": [{\"questionpart_n\": \"(f)\", \"question\": \"(f)\", \"answer\": \"[\\\"pipa\\\",\\\"pipaf\\\"]\", \"matches_human_scoring\": false, \"fuzzy_matching\": false, \"manual_edit\": false}, {\"questionpart_n\": \"(g)\", \"question\": \"(g)\", \"answer\": \"titri\", \"matches_human_scoring\": false, \"fuzzy_matching\": false, \"manual_edit\": false}, {\"questionpart_n\": \"(h)\", \"question\": \"(h)\", \"answer\": \"community\", \"matches_human_scoring\": false, \"fuzzy_matching\": false, \"manual_edit\": false}, {\"questionpart_n\": \"(i)\", \"question\": \"(i)\", \"answer\": \"lopris\", \"matches_human_scoring\": false, \"fuzzy_matching\": false, \"manual_edit\": false}, {\"questionpart_n\": \"(j)\", \"question\": \"(j)\", \"answer\": \"calves\", \"matches_human_scoring\": false, \"fuzzy_matching\": false, \"manual_edit\": false}]}]",
+    "obfuscated": "True",
+    "obf_num": "2",
+    "mapping": {
+        "b": "d",
+        "d": "b",
+        "p": "t",
+        "t": "p",
+        "f": "s",
+        "s": "f",
+        "i": "u",
+        "u": "i",
+        "e": "o",
+        "o": "e",
+        "r": "v",
+        "v": "l",
+        "l": "r",
+        "m": "n",
+        "n": "m",
+        "h": "h",
+        "c": "c",
+        "k": "k",
+        "iuviu": "iuviu",
+        "marte": "marte",
+        "hur\u030cie": "hur\u030cie",
+        "ikuvina": "ikuvina",
+        "a": "a"
+    }
+}

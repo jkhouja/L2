@@ -1,5 +1,5 @@
 <h2 align="center">
-  <p><a href="https://arxiv.org/abs/2503.02972">LingOly-TOO</a>: Disentangling Memorisation from Reasoning with Linguistic Templatisation and Orthographic Obfuscation</p>
+  <p><a href="https://arxiv.org/abs/2503.02972">LingOly-TOO Benchmark</a>: Disentangling Reasoning from Knowledge</p>
 </h2>
 
 LingOLY-TOO (L2) is a reasoning benchmark for Large Language Models. It was carefully designed to reduce the effect of memorisation in model performance estimates.
@@ -38,7 +38,7 @@ source venv/bin/activate
 
 
 ## How to use this benchmark
-The questions are stored in two zip files, `./testing/data/splits/benchmark_small.jsonl.zip` and `./creation/data/ann_puzzles.zip`. The former contains the cleaned and validated questions ready for loading into prompts. The latter contains the annotated linguistic problems files so that they can be re-processed as necessary. The zip files are password protected with the password `lingoly` to impede web scraping.
+The questions are stored in two zip files, `./testing/data/splits/benchmark.jsonl.zip` and `./creation/data/ann_puzzles.zip`. The former contains the cleaned and validated questions ready for loading into prompts. The latter contains the annotated linguistic problems files so that they can be re-processed as necessary. The zip files are password protected with the password `lingoly` to impede web scraping.
 
 To run the benchmark on one of the models from this paper, (listed in `./testing/data/model_list.json`), install the requisite packages listed in `requirements.txt`, add any necessary API keys to the environment, and then execute one of the following commands: 
 
@@ -66,7 +66,7 @@ The annotated data should exist in `./creation/data/formatted`
 Execute the following commands with the number of obfuscation to generate per problem
 ```
 cd creation/code
-python obfuscate.py -n 5
+python obfuscate.py -n 6
 ```
 
 1. Run data validation
@@ -78,7 +78,7 @@ The obfuscated data ready for benchmarking will be persisted in `./creation/data
 
 
 ### Example:
-To run a model (e.g. GPT_3.5, Gemma_7B):
+To run a model (e.g. GPT_4.5, Gemma_7B):
 ```
 cd testing/code
 testing/code$ python benchmark_model.py GPT_4.5
@@ -96,8 +96,8 @@ Please submit a new issue for questions or reporting a bug.
 If you use this work, please cite:
 
 ```bibtex
-@misc{khouja2025lingolytoodisentanglingmemorisationreasoning,
-      title={LINGOLY-TOO: Disentangling Memorisation from Reasoning with Linguistic Templatisation and Orthographic Obfuscation},
+@misc{khouja2025lingolytoobenchmark,
+      title={LINGOLY-TOO Benchmark: Disentangling Reasoning from Knowledge},
       author={Jude Khouja and Karolina Korgul and Simi Hellsten and Lingyi Yang and Vlad Neacsu and Harry Mayne and Ryan Kearns and Andrew Bean and Adam Mahdi},
       year={2025},
       eprint={2503.02972},

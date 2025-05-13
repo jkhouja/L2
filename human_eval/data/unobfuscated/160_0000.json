@@ -1,0 +1,12 @@
+{
+    "preamble": "Problem 2. Language X (5 marks)\n   In the following data, gh replaces the normal Language X spelling, which uses the letter \u0263 for a voiced velar fricative \u2013 the voiced equivalent of the ch in loch and in the German Bach. The letter q represents a stop sound made with the uvula (the little point hanging down at the back of the mouth).\n",
+    "context": "Here are some sentences in Language X and their English translations.\n\n1\tUzzlent.\tThey ran.\n2\tUkregh.\tI stole.\n3\tTuzzel.\tShe ran.\n4\tUr uzzlegh ara.\tI did not run.\n5\tYuker weqcic.\tA boy stole.\n6\tUr yuzzel ara.\tHe did not run.\n7\tUr kerzent ara.\tThey did not plough.\n8\tTekerez teqcict.\tA girl ploughed.",
+    "questions": "[{\"question_n\": \"Q 2.1\", \"prompt\": \"Translate the following sentences into Language X:\", \"subprompts\": [{\"questionpart_n\": \"9\", \"question\": \"I ploughed.\", \"answer\": \"Kerzegh.\", \"matches_human_scoring\": false, \"fuzzy_matching\": false, \"manual_edit\": false}, {\"questionpart_n\": \"10\", \"question\": \"They did not steal.\", \"answer\": \"Ur ukrent ara.\", \"matches_human_scoring\": false, \"fuzzy_matching\": false, \"manual_edit\": false}, {\"questionpart_n\": \"11\", \"question\": \"A girl stole.\", \"answer\": \"Tuker teqcict.\", \"matches_human_scoring\": false, \"fuzzy_matching\": false, \"manual_edit\": false}, {\"questionpart_n\": \"12\", \"question\": \"He did not plough.\", \"answer\": \"Ur yekerez ara.\", \"matches_human_scoring\": false, \"fuzzy_matching\": false, \"manual_edit\": false}]}, {\"question_n\": \"Q 2.2\", \"prompt\": \"Which of the following rules explains why the sentence \\\"Yuker teqcict\\\" is incorrect in Language X? Choose just one by giving the letter of the correct answer.\\nA.\\tThe verb should come last.\\nB.\\tA verb has the prefix t- if its subject is feminine.\\nC.\\tIf two words combine, the first must be shorter than the second.\\nD.\\tYuker and teqcict are both verbs, so they cannot combine.\", \"subprompts\": [{\"questionpart_n\": \"13\", \"question\": \"\", \"answer\": \"B\", \"matches_human_scoring\": false, \"fuzzy_matching\": false, \"manual_edit\": false}]}]",
+    "notes": "Converted a boxtick into providing a letter",
+    "answers_page": 2,
+    "team_review": false,
+    "obfuscated": "False",
+    "obf_num": "0",
+    "mapping": null,
+    "json_invalid": false
+}

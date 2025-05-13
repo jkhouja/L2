@@ -1,0 +1,32 @@
+{
+    "json_invalid": false,
+    "preamble": "Problem 2. Language X (5 marks)\nHere are some Language X words with their English translations. Note that sometimes two words have the same meanings - these are used in different dialects of Language X. The long vowels aa, ii,uu contrast with the short vowels a, i, u and are twice as long. y is a consonant.",
+    "context": "Table 1: Standard Examples \n\n 1. \t turna \t  \t man \t turnamnju \t on/in a man\n\n 1. \t muknju \t man \t muknjumnju \t on/in a man\n\n 2. \t rrupinjingu \t woman \t rrupinjinguju \t on/in a woman\n\n 2. \t njuyrnu \t woman \t njuyrnumnju \t on/in a woman\n\n 3. \t rdunukulya \t teenage boy \t rdunukulyaju \t on/in a teenage boy\n\n 4. \t nguyrni \t dog \t nguyrnimnju \t on/in a dog\n\n 4. \t rruwanja \t dog \t rruwanjaju \t on/in a dog\n\n 5. \t rrarlangu \t cat \t rrarlanguju \t on/in a cat\n\n 5. \t murdu \t cat \t murdumnju \t on/in a cat\n\n 6. \t wiiynu \t Kingfisher bird \t wiiynuju \t on/in a Kingfisher\n\n 7. \t njurrarlu \t teenage girl \t njurrarluju \t on/in a teenage girl\n\n 8. \t rtuu  \t clearing \t rtuumnju \t in a clearing\n\n 9. \t nyunju \t hand \t nyunjumnju \t on a hand\n\n 10. \t miku \t  home \t mikumnju \t at home\n\n 11. \t nganju  \t wallaby \t __(a)__ \t on/in a wallaby\n\n 11. \t rdurruka \t wallaby \t __(b)__  \t on/in a wallaby\n\n 12. \t rdunya \t yard \t __(c)__ \t on/in\u00a0a yard\n\n 13. \t njiiwu \t seed \t __(d)__ \t on/in a seed\n\n 13. \t njunjungu \t seed \t __(e)__ \t on/in a seed\n\n 14. \t tijurrna \t stone knife \t __(f)__  \t on a stone knife\n\n 14. \t njurlrna \t stone knife \t __(g)__ \t on a stone knife\n\n\n Table 2: Possibly Irregular Examples \n\n 15. \t rduwa \t that \t rduwaju \t there\n\n 16. \t rraya \t like this \t rrayaju \t somewhere here\n\n 17. \t lurrn this \t lurrniju \t here\n\n 18. \t rduwirrni \t that there \t rduwirrniju \t on that there\n\n 19. \t rdalu \t there \t rdaluju \t over there",
+    "questions": "[{\"question_n\": \"Q 2.1\", \"prompt\": \"Fill in the gaps (a)-(g).\", \"subprompts\": [{\"questionpart_n\": \"(a)\", \"question\": \"__(a)__\", \"answer\": \"nganjumnju\", \"matches_human_scoring\": true, \"fuzzy_matching\": false, \"manual_edit\": false}, {\"questionpart_n\": \"(b)\", \"question\": \"__(b)__\", \"answer\": \"rdurrukaju\", \"matches_human_scoring\": true, \"fuzzy_matching\": false, \"manual_edit\": false}, {\"questionpart_n\": \"(c)\", \"question\": \"__(c)__\", \"answer\": \"rdunyamnju\", \"matches_human_scoring\": true, \"fuzzy_matching\": false, \"manual_edit\": false}, {\"questionpart_n\": \"(d)\", \"question\": \"__(d)__\", \"answer\": \"njiiwuju\", \"matches_human_scoring\": true, \"fuzzy_matching\": false, \"manual_edit\": false}, {\"questionpart_n\": \"(e)\", \"question\": \"__(e)__\", \"answer\": \"njunjunguju\", \"matches_human_scoring\": true, \"fuzzy_matching\": false, \"manual_edit\": false}, {\"questionpart_n\": \"(f)\", \"question\": \"__(f)__\", \"answer\": \"tijurrnaju\", \"matches_human_scoring\": true, \"fuzzy_matching\": false, \"manual_edit\": false}, {\"questionpart_n\": \"(g)\", \"question\": \"__(g)__\", \"answer\": \"njurlrnamnju\", \"matches_human_scoring\": true, \"fuzzy_matching\": false, \"manual_edit\": false}]},{\"question_n\": \"Q 2.2\", \"prompt\": \"For each of the rows 15-19 in Table 2 above, write either Regular or Irregular to indicate whether the example follows the pattern exemplified in Table 1.\", \"subprompts\": [{\"questionpart_n\": \"15.\", \"question\": \"15.\", \"answer\": \"Irregular\", \"matches_human_scoring\": true, \"fuzzy_matching\": false, \"manual_edit\": false},{\"questionpart_n\": \"16.\", \"question\": \"16.\", \"answer\": \"Irregular\", \"matches_human_scoring\": true, \"fuzzy_matching\": false, \"manual_edit\": false},{\"questionpart_n\": \"17.\", \"question\": \"17.\", \"answer\": \"Irregular\", \"matches_human_scoring\": true, \"fuzzy_matching\": false, \"manual_edit\": false},{\"questionpart_n\": \"18.\", \"question\": \"18.\", \"answer\": \"Regular\", \"matches_human_scoring\": true, \"fuzzy_matching\": false, \"manual_edit\": false},{\"questionpart_n\": \"19.\", \"question\": \"19.\", \"answer\": \"Irregular\", \"matches_human_scoring\": true, \"fuzzy_matching\": false, \"manual_edit\": false}]}]",
+    "obfuscated": "True",
+    "obf_num": "4",
+    "mapping": {
+        "a": "u",
+        "i": "a",
+        "u": "i",
+        "m": "rr",
+        "n": "rl",
+        "rn": "y",
+        "ny": "l",
+        "nj": "ly",
+        "ng": "m",
+        "p": "n",
+        "t": "rn",
+        "rt": "ny",
+        "k": "nj",
+        "j": "ng",
+        "rd": "p",
+        "w": "t",
+        "r": "rt",
+        "rr": "k",
+        "rl": "j",
+        "y": "rd",
+        "l": "w",
+        "ly": "r"
+    }
+}

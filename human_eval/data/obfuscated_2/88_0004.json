@@ -1,0 +1,27 @@
+{
+    "json_invalid": false,
+    "preamble": "Problem 5. You to me for them to him for us in Language X (15 marks)\n  ",
+    "context": "Here are some example sentences in Language X, with their English translations.\n\nAba mubu mahohiju.            We two carved the chicken for him.\nQilol mubu ohac.               Qilol gave him the chicken. [Qilol is a name.]\nEwu nuwu baeg wen eququbesu.            I sold the two women the road.\nOdu jabo wac.                He ate the mango.\nAba jabo wenju.               We two ate the mango.\nEwu jabo mahubesu.           I carved the mango for the two of them.\nOdu fufu ehac.             He gave me the papaya. \nEwu jabo ohesu.              I gave him mango.\nOdu wen equqohac.            He sold him the road.\nAba mubu uqiju.               We two gave you two the chicken.\nWen equqehusu.               Sell me the road!\nJabo mahubusu.               Carve the mango for the two of them!\n\nNotes: Language X has no words for \u2018the\u2019, \u2018a\u2019 or \u2018some\u2019.\n",
+    "questions": "[{\"question_n\": \"Q 5\", \"prompt\": \"Provide Language X translations for the English sentences.\", \"subprompts\": [{\"questionpart_n\": \"1. \", \"question\": \"The chicken ate the mango.\", \"answer\": \"Mubu jabo wac.\", \"matches_human_scoring\": true, \"fuzzy_matching\": false, \"manual_edit\": false}, {\"questionpart_n\": \"2. \", \"question\": \"I ate the mango for Qilol.\", \"answer\": \"Ewu Qilol jabo wohesu.\", \"matches_human_scoring\": true, \"fuzzy_matching\": false, \"manual_edit\": false}, {\"questionpart_n\": \"3\", \"question\": \"He gave the two women mango.\", \"answer\": \"Odu nuwu baeg jabo ubac.\", \"matches_human_scoring\": true, \"fuzzy_matching\": false, \"manual_edit\": false}, {\"questionpart_n\": \"4\", \"question\": \"We two sold the two of them the chicken.\", \"answer\": \"Aba mubu eququbiju.\", \"matches_human_scoring\": true, \"fuzzy_matching\": false, \"manual_edit\": false}, {\"questionpart_n\": \"5\", \"question\": \"I gave myself the papaya. [myself = me]\", \"answer\": \"Ewu fufu ehesu.\", \"matches_human_scoring\": true, \"fuzzy_matching\": false, \"manual_edit\": false}, {\"questionpart_n\": \"6\", \"question\": \"Give me the chicken!\", \"answer\": \"Mubu ehusu.\", \"matches_human_scoring\": true, \"fuzzy_matching\": false, \"manual_edit\": false}, {\"questionpart_n\": \"7\", \"question\": \"Eat the mango for you two!\", \"answer\": \"Jabo wuqusu.\", \"matches_human_scoring\": true, \"fuzzy_matching\": false, \"manual_edit\": false}, {\"questionpart_n\": \"8\", \"question\": \"Give the two women mango!\", \"answer\": \"Nuwu baeg jabo ubusu.\", \"matches_human_scoring\": true, \"fuzzy_matching\": false, \"manual_edit\": false}]}]",
+    "obfuscated": "True",
+    "obf_num": "4",
+    "mapping": {
+        "b": "l",
+        "c": "n",
+        "d": "q",
+        "g": "s",
+        "h": "t",
+        "j": "w",
+        "l": "b",
+        "n": "c",
+        "q": "d",
+        "s": "g",
+        "t": "h",
+        "w": "j",
+        "a": "u",
+        "e": "a",
+        "i": "e",
+        "o": "i",
+        "u": "o"
+    }
+}

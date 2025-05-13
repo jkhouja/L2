@@ -1,0 +1,27 @@
+{
+    "json_invalid": false,
+    "preamble": "Problem 2. Language X (5 marks)\n   In the following data, gh replaces the normal Language X spelling, which uses the letter \u0263 for a voiced velar fricative \u2013 the voiced equivalent of the ch in loch and in the German Bach. The letter q represents a stop sound made with the uvula (the little point hanging down at the back of the mouth).\n",
+    "context": "Here are some sentences in Language X and their English translations.\n\n1\tAccrimf.\tThey ran.\n2\tAknil.\tI stole.\n3\tFaccir.\tShe ran.\n4\tAn accril unu.\tI did not run.\n5\tGhakin yigzez.\tA boy stole.\n6\tAn ghaccir unu.\tHe did not run.\n7\tAn kincimf unu.\tThey did not plough.\n8\tFikinic figzezf.\tA girl ploughed.",
+    "questions": "[{\"question_n\": \"Q 2.1\", \"prompt\": \"Translate the following sentences into Language X:\", \"subprompts\": [{\"questionpart_n\": \"9\", \"question\": \"I ploughed.\", \"answer\": \"Kincil.\", \"matches_human_scoring\": false, \"fuzzy_matching\": false, \"manual_edit\": false}, {\"questionpart_n\": \"10\", \"question\": \"They did not steal.\", \"answer\": \"An aknimf unu.\", \"matches_human_scoring\": false, \"fuzzy_matching\": false, \"manual_edit\": false}, {\"questionpart_n\": \"11\", \"question\": \"A girl stole.\", \"answer\": \"Fakin figzezf.\", \"matches_human_scoring\": false, \"fuzzy_matching\": false, \"manual_edit\": false}, {\"questionpart_n\": \"12\", \"question\": \"He did not plough.\", \"answer\": \"An ghikinic unu.\", \"matches_human_scoring\": false, \"fuzzy_matching\": false, \"manual_edit\": false}]}, {\"question_n\": \"Q 2.2\", \"prompt\": \"Which of the following rules explains why the sentence \\\"Ghakin figzezf\\\" is incorrect in Language X? Choose just one by giving the letter of the correct answer.\\nA.\\tThe verb should come last.\\nB.\\tA verb has the prefix f- if its subject is feminine.\\nC.\\tIf two words combine, the first must be shorter than the second.\\nD.\\tGhakin and figzezf are both verbs, so they cannot combine.\", \"subprompts\": [{\"questionpart_n\": \"13\", \"question\": \"\", \"answer\": \"B\", \"matches_human_scoring\": false, \"fuzzy_matching\": false, \"manual_edit\": false}]}]",
+    "obfuscated": "True",
+    "obf_num": "2",
+    "mapping": {
+        "u": "a",
+        "e": "i",
+        "a": "u",
+        "i": "e",
+        "r": "n",
+        "l": "r",
+        "gh": "l",
+        "y": "gh",
+        "w": "y",
+        "m": "w",
+        "n": "m",
+        "f": "t",
+        "g": "q",
+        "z": "c",
+        "t": "f",
+        "q": "g",
+        "c": "z"
+    }
+}

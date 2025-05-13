@@ -92,7 +92,7 @@ def pipeline(
     cot: bool = False,
     no_context: bool = False,
     outfolder: str = "../data/splits",
-    outfile: str = "modelname_questionsname.json",
+    outfile: str = "benchmark",
     seed: int = SEED,
 ):
     set_seeds(seed)
@@ -188,7 +188,7 @@ def pipeline(
 
     # Write all data in out file
     print(f"Saving all {len(all_data)} prompts")
-    all_data_file = f"{folder}/benchmark.jsonl"
+    all_data_file = f"{folder}/{outfile}.jsonl"
     with open(all_data_file, "w") as f:
         for example in all_data:
             f.write(json.dumps(example) + "\n")
@@ -197,7 +197,7 @@ def pipeline(
     # Write final merged splits
     dev_set = {}
     test_set = {}
-    train_file = f"{folder}/train.jsonl"
+    train_file = f"{folder}/{outfile}_train.jsonl"
     with open(train_file, "w") as f:
         for k in final_data.keys():
             if k in TRAIN_SPLIT:
@@ -212,7 +212,7 @@ def pipeline(
             else:
                 dev_set[k] = final_data[k]
 
-    dev_file = f"{folder}/dev.jsonl"
+    dev_file = f"{folder}/{outfile}_dev.jsonl"
     with open(dev_file, "w") as f:
         for k in dev_set.keys():
             if k in DEV_SPLIT:
@@ -227,7 +227,7 @@ def pipeline(
             else:
                 test_set[k] = dev_set[k]
 
-    test_file = f"{folder}/test.jsonl"
+    test_file = f"{folder}/{outfile}_test.jsonl"
     with open(test_file, "w") as f:
         for k in test_set.keys():
             for example in test_set[k]:

@@ -116,8 +116,10 @@ def find_match(ans_items, key):
 def extract_answers(entry):
     extracted = entry["model_answers_extracted"]
     try:
-        extracted = json.loads(extracted)
+        # extracted = json.loads(extracted)
+        extracted = eval(extracted)
     except:
+        print(f"Failed to parse extracted: {extracted}")
         extracted = entry["model_answers_extracted"]
     model_answers = entry["model_answers"]
 
@@ -125,6 +127,7 @@ def extract_answers(entry):
     for k, v in model_answers.items():
         if v is not None and v != "":
             # Use original model response if available
+            print(f"Using original answer: {v}")
             if "IMPROPER PARSING:" in str(v):
                 try:
                     if extracted != "" and extracted is not None:
@@ -144,8 +147,12 @@ def extract_answers(entry):
             else:
                 out[k] = v
         else:
+            print(
+                f"Trying to use extracted answer: {extracted} type: {type(extracted)}"
+            )
             if isinstance(extracted, dict):
                 out[k] = find_match(extracted, k)
+                print(f"Found {out[k]} from {extracted}")
             else:
                 print("No json in raw data and no model response. returning empty")
                 out[k] = ""
@@ -184,7 +191,7 @@ if __name__ == "__main__":
         "--outfolder",
         type=str,
         help="The folder filepath to save the results.",
-        default="./responses",
+        default="../data/scores/",
     )
     parser.add_argument(
         "-o",
@@ -192,6 +199,12 @@ if __name__ == "__main__":
         type=str,
         help="The filename to save the results.",
         default="modelname_questionsname.json",
+    )
+    parser.add_argument(
+        "--responsesfolder",
+        type=str,
+        help="The path of the responses to score",
+        default="../data/responses_obf/",
     )
     parser.add_argument(
         "--harness",
@@ -239,7 +252,7 @@ if __name__ == "__main__":
         filename = args.outfile
 
     print(f"Loading model respones from: {filename}")
-    with open("../data/responses_obf/" + filename + ".json") as f:
+    with open(args.responsesfolder + filename + ".json") as f:
         responses = json.load(f)
 
     responses = pd.DataFrame(responses)
@@ -296,6 +309,6 @@ if __name__ == "__main__":
 
     # responses.drop("correct_answers", axis=1, inplace=True)
 
-    print("Saving")
-    responses.to_csv("../data/scores/" + filename + ".csv")
-    print(f"Doine")
+    print(f"Saving to {filename}.csv")
+    responses.to_csv(args.outfolder + filename + ".csv")
+    print(f"Done")
